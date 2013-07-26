@@ -3,7 +3,7 @@ import sbt._, Keys._
 object BuildSettings {
   val buildSettings = Defaults.defaultSettings ++ Seq(
     organization := "io.github.hunam",
-    version := "1.0.0",
+    version := "1.0",
     scalacOptions ++= Seq(),
     scalaVersion := "2.10.2",
     scalaOrganization := "org.scala-lang",

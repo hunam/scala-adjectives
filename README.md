@@ -11,7 +11,9 @@ is created for the supplied noun type. The compiler deals with this correctly, b
 IntelliJ will complain (yet build and execute your applications nonetheless).
 
 _scala-adjectives_ is implemented using macro paradise 2.10, for quasiquote support.
-Your client code can be vanilla Scala 2.10.
+Your client code can be vanilla Scala 2.10. See _sample-externaldep/project/Build.scala_
+as an example for setting up an external project dependency on _scala-adjectives_ -- this
+will cause _scala-adjectives_ to be built by SBT, then used by your project.
 
 
 Instructions
