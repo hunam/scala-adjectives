@@ -3,6 +3,10 @@ scala-adjectives
 
 Infers adjectives from your case-class nouns. E.g: ```a (long, interesting) Book```
 
+See this [blog post](http://nadavwr.github.io/blog/2013/05/05/adjectives-in-scala/) for
+some of the rationale behind doing this. This is an older post that I haven't yet
+gotten around to updating with the macro-based solution you see here.
+
 This macro library infers adjectives from the Noun type parameter. These adjectives can
 then be used to describe Noun instances as a fluid alternative for constructors.
 
