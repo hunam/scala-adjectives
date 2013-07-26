@@ -36,7 +36,7 @@ val book = a (long, interesting) Book
 Or a more complete example:
 
 ```scala
-import com.github.hunam.adjectives.Adjectives._
+import io.github.hunam.adjectives.Adjectives._
 
 sealed abstract class Color
 case object red extends Color
