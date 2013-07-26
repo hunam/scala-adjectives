@@ -1,7 +1,7 @@
 scala-adjectives
 ================
 
-Infers adjectives from your case-class nouns
+Infers adjectives from your case-class nouns. E.g: ```a (long, interesting) Book```
 
 This macro library infers adjectives from the Noun type parameter. These adjectives can
 then be used to describe Noun instances as a fluid alternative for constructors.
@@ -19,6 +19,15 @@ Instructions
 
 It is most convenient to add adjectives for a case class as a field
 called 'adjectives' on its companion object. E.g.:
+
+```scala
+case class Book(...)
+object Book { val adjectives = mkAdjectives[Book] }
+import Book.adjectives._
+val book = a (long, interesting) Book
+```
+
+Or a more complete example:
 
 ```scala
 import com.github.hunam.adjectives.Adjectives._
